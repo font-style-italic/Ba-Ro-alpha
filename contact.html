@@ -56,7 +56,7 @@
   <div class="contact-layout">
     <section class="contact-details" aria-labelledby="contact-details-title">
       <h2 id="contact-details-title" class="visually-hidden">Contact details</h2>
-      <p>Email: <a href="mailto:hello@examplewebsite143.com">hello@examplewebsite143.com</a></p>
+      <p>Email: <a href="mailto:hello@examplewebsite143.com">custserv@baro.com.ph</a></p>
       <p>Mobile: <span class="todo-inline">(09) 9019 9283</span></p>
       <p>Landline: <span class="todo-inline">02-8123-4567</span></p>
       <address>
@@ -84,6 +84,7 @@
         </div>
 
         <!-- Added for="contact-topic" and id/name for the javascript -->
+      <div class="mb-3">
         <label class="form-label" for="contact-topic">Choose a topic</label>
         <select class="form-control" id="contact-topic" name="topic" required>
           <option value="">--Select a topic--</option>
@@ -92,6 +93,7 @@
           <option value="About the website">About the website</option>
           <option value="others">Others</option>
         </select>
+      </div>
         
 
         <div class="mb-3">
@@ -102,22 +104,20 @@
         <button class="btn btn-olive w-100" type="submit">Contact Us</button>
       </form>
     </section>
-
-    <aside class="contact-brand-panel" aria-label="Customer support information">
-      <img src="images/header-baro-logo.svg">
-      <div class="social-row" aria-hidden="true">
-        <a href="#"><img src="images/footer-social-fblogo.svg"></a>
-        <a href="#"><img src="images/footer-social-tiktok.svg"></a>
-        <a href="#"><img src="images/footer-social-x.svg"></a>
-        <a href="#"><img src="images/footer-social-insta.svg"></a>
-        <a href="#"><img src="images/footer-social-threads.svg"></a>
-      </div>
-      <p class="support-note">Customer support information</p>
-    </aside>
   </div>
-  <div class="back-to-top-wrap"><a class="text-link" href="#top">Back to top</a></div>
-</main>
 
+  <!--Popup Message Alert-->
+  <div class="contact-popup-overlay" id="popup-overlay" style="display: none;" aria-hidden="true">
+    <div class="contact-popup-frame" role="dialog" aria-labelledby="popup-heading">
+      <button type="button" class="popup-back text-link" id="popup-close-btn">Back</button>
+      <h2 id="popup-heading" class="message-heading">Your message is delivered!</h2>
+      <p class="message-body">
+        Thanks for reaching out!<br>
+        We've got your message and will be in touch very soon.
+      </p>
+    </div>
+  </div>
+  
 <!--If you edit footer, please don't forget to update all the other HTML files because header and footer are the most static part of the site.-->
 <footer class="site-footer">
   <div class="site-container footer-inner">
@@ -137,7 +137,7 @@
       <div class="footer-column footer-contact">
         <h2>Contact Us</h2>
         <p>Call us: (09) 9019 9283</span></p>
-        <p>Email us: hello@examplewebsite143.com</a></p>
+        <p>Email us: custserv@baro.com.ph</a></p>
       </div>
 
       <div class="footer-social" aria-label="Social media row">
