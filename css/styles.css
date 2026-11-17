@@ -165,11 +165,10 @@ button, input, select, textarea { font: inherit; }
 textarea.form-control { min-height: 110px; resize: vertical; }
 .form-control:focus { border-color: var(--baro-rust); box-shadow: 0 0 0 .2rem #a24e2126; outline: 2px solid transparent; }
 .form-setup-note { margin: 10px 0 0; font-size: .78rem; color: #414a4a; }
-.contact-brand-panel { text-align: center; }
-.contact-wordmark { font-family: var(--heading-font); font-size: clamp(2.5rem, 4vw, 4rem); font-weight: 700; color: var(--baro-navy); letter-spacing: -.08em; }
-.social-row { display: flex; justify-content: center; gap: 14px; color: var(--baro-rust); font-weight: 700; font-size: 1.2rem; margin: 8px 0 32px; }
-.support-note { color: var(--baro-rust); font-family: var(--heading-font); font-weight: 700; }
-.back-to-top-wrap { text-align: center; padding: 32px 0 14px; }
+.contact-brand-panel { text-align: center; margin-top: 73px; }
+.contact-brand-logo { width: 217px; height: auto; display: block; margin: 0 auto 12px; }
+.contact-brand-tagline { margin: 0; font-family: var(--body-font); font-weight: 700; font-size: 20px; color: var(--baro-ink); }
+.back-to-top-wrap { text-align: center; padding: 72px 0 14px; }
 
 
 
