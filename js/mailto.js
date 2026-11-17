@@ -3,8 +3,10 @@
 //Contact page.js section 
 
 //This is the Baro address that we will see in the Form
-const TO_ADDRESS = "hello@examplewebsite143.com";
+const TO_ADDRESS = "custserv@baro.com.ph";
 const form = document.querySelector("#contact-form");
+const popupOverlay = document.querySelector("#popup-overlay");
+const popupBackBtn = document.querySelector("#popup-back-btn);
 
 function buildMailto() {
   const name = document.querySelector("#contact-name").value;
@@ -27,10 +29,16 @@ function buildMailto() {
 }
 
 // The thank you pop up order.
-form.addEventListener("submit", function (event) {
-  event.preventDefault();
-  alert("Thank you for your submission, " + document.querySelector("#contact-name").value + "! Your email app will open so you can send your message.");
-  window.location.href = buildMailto();
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    popupOverlay.style.display = "flex"; popupOverlay.setAttribute("aria-hidden", "false");
+    window.location.href = buildMailto();
 });
+
+// Clicking "Back" to close Popup
+popupBackBtn.addEventListener("click", function () {
+  popupOverlay.style.display = "none"; popupOverlay.setAttribute("aria-hidden", "true"); form.reset();
+});
+
 
 //I've only done the JS file for the contact us page haven't really started with the product page
