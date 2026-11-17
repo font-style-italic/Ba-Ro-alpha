@@ -154,7 +154,7 @@ button, input, select, textarea { font: inherit; }
 .contact-page { padding-block: 64px 24px; }
 .contact-title { margin: 0 0 62px; text-align: center; color: var(--baro-navy); font-family: var(--heading-font); font-size: clamp(2rem, 3vw, 2.6rem); }
 .contact-layout { display: grid; grid-template-columns: 1fr 1.05fr; align-items: center; gap: clamp(28px, 4vw, 62px); min-height: 420px; max-width: 670px; margin: 0 auto;}
-.contact-details { display: grid; gap: 18px; font-family: var(--heading-font); font-size: .97rem; color: }
+.contact-details { display: grid; gap: 18px; font-family: var(--heading-font); font-size: .97rem; color: var(--baro-ink); }
 .contact-details p { margin: 0; }
 .contact-details address { margin: 12px 0 18px; font-style: normal; }
 .contact-details a { overflow-wrap: anywhere; }
@@ -170,6 +170,13 @@ textarea.form-control { min-height: 110px; resize: vertical; }
 .contact-brand-tagline { margin: 0; font-family: var(--body-font); font-weight: 700; font-size: 20px; color: var(--baro-ink); }
 .back-to-top-wrap { text-align: center; padding: 72px 0 14px; }
 
+/*Sent Message Alert*/
+.contact-popup-overlay {position: fixed; inset: 0; background: color-mix(in srgb, var(--baro-ink) 45%, transparent); display: flex; justify-content: center; align-items: flex-start; padding: 140px 40px 40px; z-index: 1000; }
+.contact-popup-frame { width: 100%; max-width: 475px; background: var(--baro-mist); padding: 12px 24px 65px; position: relative; }
+.popup-back.text-link {position: absolute; top: 12px; left: 12px; text-align: left; font-size: 0.875rem; }
+.message-heading, .message-body { text-align: center; }
+.message-heading {margin-top: 53px; margin-bottom: 45px; font-family: var(--heading-font); font-weight: 700; font-size: 1.125rem;}
+.message-body { line-height: 1.5; font-family: var(--body-font); font-size: 1rem; color: var(--baro-navy); }
 
 
 
