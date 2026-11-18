@@ -3,7 +3,7 @@
 //Contact page.js section 
 
 //This is the Baro address that we will see in the Form
-const TO_ADDRESS = "custserv@baro.com.ph";
+const TO_ADDRESS = "hello@examplewebsite142.com";
 const form = document.querySelector("#contact-form");
 const popupOverlay = document.querySelector("#popup-overlay");
 const popupBackBtn = document.querySelector("#popup-back-btn);
